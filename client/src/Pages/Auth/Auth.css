@@ -19,7 +19,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 90px;
 }
 .auth-container-2 form{
     width: 100%;
@@ -85,4 +85,14 @@
     border: none;
     font-size: 13px;
     cursor: pointer;
+}
+@media (max-width : 865px){
+    .auth-container-1{
+        display: none  ;
+    }
+}
+@media (max-width : 385px){
+    .auth-container-2{
+        width: 80%;
+    }
 }

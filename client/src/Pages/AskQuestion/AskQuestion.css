@@ -6,6 +6,7 @@
 .ask-ques-container{
     margin: auto;
     max-width: 1200px;
+    padding: 10px;
 }
 
 .ask-ques-container h1{

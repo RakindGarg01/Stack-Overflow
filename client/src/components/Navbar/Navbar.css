@@ -1,3 +1,4 @@
+
 .main-nav{
     min-height: 50px;
     width: 100%;
@@ -31,7 +32,16 @@
     color: rgb(69,69,69);
     transition: 0.2s;
 }
-
+.checkbtn{
+    font-size: larger;
+    float: right;
+    line-height: 50px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
 .nav-btn{
     cursor: pointer;
     border-radius: 20px;
@@ -49,7 +59,7 @@
 }
 
 .navbar form input{
-    min-width: 90%;
+    min-width: 80%;
     margin: 0;
     padding: 8px 10px 8px 32px;
     font-size: 13px;
@@ -73,4 +83,13 @@
 }
 .nav-links:hover{
     background-color: #d3e4eb;
+}
+
+@media (max-width : 1110px) {
+    
+    
+}
+
+@media (max-width : 760px){
+    
 }

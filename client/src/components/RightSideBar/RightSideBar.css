@@ -1,6 +1,7 @@
 .right-sidebar{
     float : right;
-    width: 300px;
+    width: 18.75rem;
+    
     margin: 40px 0px 15px 24px;
     font-size: 15px;
 }
@@ -23,7 +24,7 @@
 .right-sidebar-div-1 .right-sidebar-div-2{
     display: flex;
     align-items: flex-start;
-    justify-content: space-evenly;
+    /* justify-content: center; */
 }
 .right-sidebar-div-1 .right-sidebar-div-2 p{
     padding-left: 10px;
@@ -53,4 +54,15 @@
     background-color: #e1ecf4;
     color: #39729d;
     border-radius: 2px;
+}
+@media (max-width : 1050px){
+    .right-sidebar{
+        width: 100%;
+        margin: 0;
+    }
+}
+@media (max-width : 640px){
+    .right-sidebar{
+        width: 100%;
+    }
 }

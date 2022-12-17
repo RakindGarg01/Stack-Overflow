@@ -9,7 +9,24 @@
 .home-container-2{
     max-width: 1100px;
     width: calc(100% - 164px);
-    border: 1px solid #d6d9dc;
+    /* border:  1px solid #d6d9dc; */
     padding: 24px;
     box-sizing: border-box;
+}
+@media (max-width:640px){
+    .home-container-1{
+        display: block;
+        justify-content: center;
+        width: 100vw;
+       
+    }
+    .home-container-2{
+        
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        margin-top: -40px;
+        margin-left: 12px;
+        padding: 0;
+    }
 }

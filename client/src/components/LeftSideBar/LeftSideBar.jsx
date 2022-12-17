@@ -7,20 +7,23 @@ const LeftSideBar = () => {
   return (
     <div className="left-sidebar">
       <nav className="side-nav">
-        <NavLink to='/' className="side-nav-links active" >
-          <p>Home</p>
+        <NavLink to='/' className="side-nav-links home"  >
+          <p className='para'>Home</p>
         </NavLink>
+        <div>&emsp;</div>
         <div className="side-nav-div">
-          <div><p>PUBLIC</p></div>
+          <div className='public'><p>PUBLIC</p></div>
           <NavLink to='/Questions'className="side-nav-links" >
-            <img src={Globe} alt="Globe" />
+            <img className = "globe-img"src={Globe} alt="Globe" />
             <p style={{paddingLeft : "10px"}}>Questions</p>
           </NavLink>
-          <NavLink to='/Tags'className="side-nav-links"  style={{paddingLeft : "40px"}}>
-            <p>Tags</p>
+          <div></div>
+          <NavLink to='/Tags'className="side-nav-links"  >
+            <p className='para'>Tags</p>
           </NavLink>
-          <NavLink to='/Users'className="side-nav-links" style={{paddingLeft : "40px"}}>
-            <p>Users</p>
+          <div></div>
+          <NavLink to='/Users'className="side-nav-links" >
+            <p className='para'>Users</p>
           </NavLink>
         </div>
       </nav>
