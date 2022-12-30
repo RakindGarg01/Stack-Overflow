@@ -52,6 +52,68 @@
     background-color: rgb(226,226,226);
 }
 
+.navbar .collapse-sm {
+    display: flex;
+}
+.ham{
+    display: none;
+}
+.login-info{
+    display: flex;
+}
+@media screen and (max-width: 823px) {
+    .login-info{
+        margin-left: 325px;
+    }
+    .ham{
+        display: block;
+    }
+    .navbar{
+        justify-content: flex-start;
+    }
+    .navbar .collapse-sm {
+        position: fixed;
+        top: 53px;
+        left: 0px;
+        height : 100vh;
+        background-color: #f8f8f8;
+        border: 3px solid #ef8236;
+        display: none;
+        /* transition: display 2s; */
+    }    
+    .navbar .collapse-sm.open{
+        display: block;
+    }
+    .navbar .collapse-sm > * {
+        display: block;
+    }
+}
+@media (max-width:681px){
+    .login-info{
+        margin-left: 200px;
+    }
+}
+@media (max-width : 517px){
+    .login-info{
+        margin-left: 70px;
+    }
+}
+@media (max-width : 385px){
+    .login-info{
+        margin-left: 15px;
+    }
+}
+@media (max-width : 325px){
+    .ham{
+        margin-left: 10px;
+    }
+    .nav-logo{
+        padding: 5px 10px;
+    }
+    .login-info{
+        margin-left: 9px;
+    }
+}
 .navbar form{
     flex-grow: 1;
     padding: 0px 12px;
@@ -59,14 +121,20 @@
 }
 
 .navbar form input{
-    min-width: 80%;
+    min-width: 100%;
     margin: 0;
+    margin-top: 2px;
     padding: 8px 10px 8px 32px;
     font-size: 13px;
     border: solid 1px #0000003e;
     border-radius: 3px;
 }
 
+@media(max-width : 1050px){
+    .navbar form input{
+        min-width: 80%;
+    }
+}
 .navbar form .search-icon{
     position: absolute;
     left: 25px;

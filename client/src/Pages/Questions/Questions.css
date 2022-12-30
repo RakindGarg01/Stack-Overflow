@@ -113,3 +113,8 @@
     line-height: 18px;
     white-space: pre-line;
 }
+@media (max-width : 1050px){
+    .question-details-page{
+        width: 100%;
+    }
+}

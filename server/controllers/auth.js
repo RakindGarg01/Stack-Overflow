@@ -35,7 +35,7 @@ export const login = async (req,res)=>{
             return res.status(400).json({message : "Invalid UserName or Password"})
         }
 
-        const token = jwt.sign({email:existingUser.email, id:existingUser._id},process.env.JWT_SECRET,{expiresIn : '60s'});
+        const token = jwt.sign({email:existingUser.email, id:existingUser._id},process.env.JWT_SECRET,{expiresIn : '1h'});
         res.status(200).json({result:existingUser, token})
     } catch (error) {
         res.status(500).json("Session Expired!! Please LogIn Again..")

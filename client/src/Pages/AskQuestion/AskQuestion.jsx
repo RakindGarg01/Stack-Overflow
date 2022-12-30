@@ -22,6 +22,7 @@ const AskQuestion = () => {
         }
         else{
             alert("Please Login To Ask a Question");
+            navigate('/Auth');
         }
     }
 

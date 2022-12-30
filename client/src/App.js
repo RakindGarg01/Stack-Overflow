@@ -6,6 +6,8 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import AllRoutes from './AllRoutes';
 import { fetchAllUsers } from './actions/users.js';
+import Chat from './components/ChatBot/Chat';
+import { getAllBlogs } from './actions/blog.js';
 
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
   const dispatch = useDispatch();
   useEffect(()=>{
     dispatch(fetchAllQuestions());
+    dispatch(getAllBlogs());
     dispatch(fetchAllUsers());
   },[dispatch])
 
@@ -21,6 +24,7 @@ function App() {
       <Router>
         <Navbar/>
         <AllRoutes/>
+        <Chat />
       </Router>
     </div>
   );
